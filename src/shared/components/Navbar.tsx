@@ -16,10 +16,7 @@ const Navbar = () => {
       
 
   return (
-    <HStack display='flex' justifyContent='space-between' alignItems='center' bgColor={{
-        base: "blue",
-        lg: 'chocolate'
-    }} p='1em 2em'>
+    <HStack display='flex' justifyContent='space-between' alignItems='center' bgColor='chocolate' p='1em 2em'>
 
         <HStack>
             {
