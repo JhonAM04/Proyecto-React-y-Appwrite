@@ -51,7 +51,7 @@ const Register = () => {
 
               <FormControl>
                 <FormLabel>Contraseña:</FormLabel>
-                <Input type="password" name="password" required/>
+                <Input type="password" name="password" minLength={8} required/>
               </FormControl>
 
               <Button type="submit">Registrar</Button>

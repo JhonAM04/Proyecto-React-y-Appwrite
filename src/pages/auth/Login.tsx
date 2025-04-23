@@ -54,7 +54,10 @@ const Login = () => {
               <Button type="submit">Ingresar</Button>
 
               <Divider />
-              <Link to={Paths.RecuperarPassword}>Olvidaste tu contraseña?</Link>
+              <HStack justifyContent='space-between'>
+                <Link to={Paths.RecuperarPassword}>Olvidaste tu contraseña?</Link>
+                <Link to={Paths.Register}>No tienes cuenta? Registrate aqui</Link>
+              </HStack>
           </Box>
         </VStack>
     </HStack>
