@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react"
 import { database, ID } from "../lib/appwrite"
 import { AppwriteResponse, Product } from "../declaration/AppwriteTypes"
 import { AppWrite } from "../lib/env"
-import { Box, Button, ButtonGroup, FormControl, FormLabel, HStack, Input, Tag, Tooltip } from "@chakra-ui/react"
+import { Box, Button, ButtonGroup, FormControl, FormLabel, HStack, Image, Input, Tag, Tooltip } from "@chakra-ui/react"
 import { toast } from "sonner"
 import { Link } from "react-router-dom"
 import { MdDeleteForever } from "react-icons/md"
@@ -143,6 +143,7 @@ const Home = () => {
           <HStack key={p.$id} w='400px' p='.4em 1em' borderRadius='10px' bgColor='lightgray' mb='1em' mt='1em' justifyContent='space-between'>
             <Box>
               <Link to={`/products/appWrite/${p.$id}`}>
+                <Image src={p.image} />
                 <h1>{p.title}</h1>
                 <h2>S/.{p.price}</h2>
                 <h2>({p.stock} en stock)</h2>

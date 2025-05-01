@@ -10,6 +10,7 @@ export interface Product extends Models.Document {
     price: number
     active: boolean
     stock: number
+    image: string
 }
 
 export interface Profile extends Models.Document {
